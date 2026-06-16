@@ -162,7 +162,7 @@ function enviarPedido(e) {
   if (tipoEntrega === "Comer dentro del local" && mesa) mensaje += `🔢 *Mesa:* ${mesa}\n\n`;
   mensaje += `💰 *Pago:* ${tipoPago}\n\n`;
   if (tipoPago === "Efectivo" && efectivo) mensaje += `💵 *Paga con:* ${efectivo}\n\n`;
-  if (specs) mensaje += `📒 *Especificaciones:* ${specs}\n\n`;
+  if (specs) mensaje += `📒 *Especificaciones:* ${specs}\n`;
   mensaje += `━━━━━━━━━━━━━━━━━\n`;
   mensaje += `${subtotalTxt}\n\n`;
   mensaje += `${empaqueTxt}\n\n`;
